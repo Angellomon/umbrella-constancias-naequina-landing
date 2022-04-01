@@ -1,5 +1,44 @@
 <script>
+  import Titulo from "./Titulo.svelte";
 </script>
 
+<section>
+  <img src="/logos/nae.png" alt="NAEQUINA" />
+  <hr />
+  <Titulo />
+</section>
+
 <style>
+  img {
+    width: 50%;
+    height: 50%;
+    /* max-width: 80%; */
+    height: auto;
+  }
+
+  hr {
+    color: white;
+    width: 70%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 0.5px solid white;
+  }
+
+  @media (max-width: 411px) {
+    section {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--naranja-principal);
+    }
+  }
+
+  @media (min-width: 768px) {
+    section {
+      position: absolute;
+      float: right;
+    }
+  }
 </style>
