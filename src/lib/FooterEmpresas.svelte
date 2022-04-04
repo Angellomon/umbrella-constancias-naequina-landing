@@ -21,4 +21,10 @@
     background-color: var(--gris-principal);
   }
 
+  @media (min-width: 768px) {
+    footer {
+      justify-content: space-evenly;
+    }
+  }
+
 </style>
