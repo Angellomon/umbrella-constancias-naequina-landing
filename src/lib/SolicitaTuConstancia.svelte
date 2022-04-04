@@ -11,7 +11,6 @@
 
 <style>
   div {
-
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #99cfff 100%);
   }
 
@@ -21,6 +20,8 @@
     background-repeat: no-repeat;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+
+    position: relative;
   }
 
   p {
@@ -41,9 +42,31 @@
     color: white;
   }
 
-  @media (max-height: 411px) {
+  @media (max-width: 411px) {
     section {
       height: 30vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+    div {
+      width: 100%;
+    }
+    
+    section {
+      border-top: none;
+      height: 40vh;
+    }
+
+    p {
+      font-size: 3.5em;
+
+      position: absolute;
+      top: 20%;
+      left: 40%;
+
+      width: 30vw;
+      text-align: center;
     }
   }
 </style>

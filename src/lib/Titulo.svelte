@@ -12,6 +12,7 @@
   div {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   span {
@@ -22,6 +23,9 @@
 
   p {
     display: inline;
+    margin: 0;
+
+    align-self: center;
   }
 
   p.quinto {
@@ -30,6 +34,7 @@
 
   p.ciclo {
     font-size: 0.6em;
+    font-weight: bold;
   }
 
   p.conferencias {
@@ -38,5 +43,23 @@
 
   p.a_2022 {
     font-size: 1.5em;
+  }
+
+  @media(min-width: 768px) {
+    p.quinto {
+      font-size: 2.4em;
+    }
+
+    p.ciclo {
+      font-size: 0.9em;
+    }
+
+    p.conferencias {
+      font-size: 1.5em;
+    }
+
+    p.a_2022 {
+      font-size: 2.4em;
+    }
   }
 </style>

@@ -61,8 +61,28 @@
     border-radius: 5px;
 
     margin: auto;
-    padding: 0.5em 1.4em;
+    padding: 0.6em 1.5em;
     
     width: 70%;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      border-top: none;
+      border-bottom: none;
+
+      width: 80vw;
+    }
+
+    p {
+      margin-top: 2.3em;
+      font-size: 1.2em;
+    }
+
+    input {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 60%;
+    }
   }
 </style>
