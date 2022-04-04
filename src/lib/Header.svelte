@@ -10,10 +10,8 @@
 
 <style>
   img {
-    width: 50%;
-    height: 50%;
+    height: 100%;
     /* max-width: 80%; */
-    height: auto;
   }
 
   hr {
@@ -28,6 +26,7 @@
   @media (max-width: 411px) {
     section {
       justify-content: center;
+      align-items: center;
       display: flex;
       flex-direction: column;
       width: 100%;
