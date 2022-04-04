@@ -1,10 +1,19 @@
 <script>
-  import Header from "./lib/Header.svelte";
+  import FooterEmpresas from "./lib/FooterEmpresas.svelte";
+import FooterGrupoNutec from "./lib/FooterGrupoNutec.svelte";
+import Header from "./lib/Header.svelte";
+import Importante from "./lib/Importante.svelte";
+import InputCorreo from "./lib/InputCorreo.svelte";
+import SolicitaTuConstancia from "./lib/SolicitaTuConstancia.svelte";
 </script>
 
 <main>
   <Header />
-  <h1>Hola</h1>
+  <SolicitaTuConstancia />
+  <Importante />
+  <InputCorreo />
+  <FooterGrupoNutec />
+  <FooterEmpresas />
 </main>
 
 <style>
