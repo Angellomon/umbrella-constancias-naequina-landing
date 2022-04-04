@@ -39,4 +39,11 @@
     margin: 0.5em;
   }
 
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
 </style>
