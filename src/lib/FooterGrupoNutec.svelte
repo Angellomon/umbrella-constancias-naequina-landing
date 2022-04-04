@@ -32,8 +32,8 @@
     display: block;
     position: relative;
 
-    width: 8.5vh;
-    height: 8vh;
+    width: 8.6vh;
+    height: 88vh;
 
     transform: rotateY(180deg);
 
@@ -58,10 +58,6 @@
     clip-path: polygon(100% 0, 0 100% , 100% 100%);
   }
 
-  span.separator::before {
-    position: absolute;
-  }
-
   footer {
     background-color: var(--naranja-principal);
 
@@ -71,4 +67,23 @@
     max-height: 10vh;
   }
 
+  @media (min-width: 768px) {
+    img.gruponutec {
+      height: 20%;
+      width: 20%;
+      align-self: center;
+    }
+
+    span.separator {
+      display: block;
+      position: relative;
+
+      width: 9.5vh;
+      height: 99vh;
+
+      transform: rotateY(180deg);
+
+      max-height: 10vh;
+    }
+  }
 </style>
