@@ -4,7 +4,8 @@
 
 <section>
   <img src="/logos/nae.png" alt="NAEQUINA" />
-  <hr />
+  <hr  class="horizontal" />
+  <span  class="vertical" />
   <Titulo />
 </section>
 
@@ -23,21 +24,55 @@
     border-top: 0.5px solid white;
   }
 
-  @media (max-width: 411px) {
-    section {
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background-color: var(--naranja-principal);
-    }
+  section {
+    background-color: var(--naranja-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 411px) {
     section {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    span.vertical {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+  img {
+    margin-left: 5%;
+  }
+    section {
+      border-bottom-left-radius: 100px;
+
+      flex-direction: row;
       position: absolute;
-      float: right;
+      justify-content: left;
+
+
+      width: 60%;
+
+      right: 0;
+    }
+    
+    hr.horizontal {
+      display: none;
+    }
+
+    span.vertical {
+      display: inline;
+
+      border-right: 1px solid white;
+
+      width: 1px;
+      height: 5vh;
+
+      margin: 0 1.3vw 0 1vw;
     }
   }
 </style>
