@@ -16,7 +16,8 @@
 <style>
   a.logo-nae {
     align-self: center;
-    position: absolute;
+    display: flex;
+    justify-content: right;
   }
   a.icon {
     align-self: center;
