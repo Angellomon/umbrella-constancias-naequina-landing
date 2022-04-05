@@ -11,7 +11,11 @@
 
 <style>
   div {
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #99cfff 100%);
+    background: linear-gradient(
+      90deg,
+      var(--azul-gradiente-ini) 0%,
+      var(--azul-gradiente-fin) 100%
+    );
   }
 
   section {
@@ -52,7 +56,7 @@
     div {
       width: 100%;
     }
-    
+
     section {
       border-top: none;
       height: 40vh;

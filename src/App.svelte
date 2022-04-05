@@ -32,6 +32,8 @@
   :root {
     --azul-principal: #3e8fd4;
     --azul-secundario: #537acf;
+    --azul-gradiente-ini: #ccd7db;
+    --azul-gradiente-fin: #83c4ec;
 
     --gris-principal: #242424;
 
@@ -77,5 +79,4 @@
       padding: 0;
     }
   }
-
 </style>
