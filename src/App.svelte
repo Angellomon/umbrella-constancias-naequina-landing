@@ -26,8 +26,13 @@
 
 <style>
   @font-face {
-    font-family: Montserrat;
-    src: url("/fonts/montserrat.ttf");
+    font-family: "Montserrat Regular";
+    src: url("/fonts/montserrat-regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Montserrat Bold";
+    src: url("/fonts/montserrat-bold.ttf");
   }
   :root {
     --azul-principal: #3e8fd4;
@@ -39,7 +44,7 @@
 
     --naranja-principal: #f6a82c;
 
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat Regular", sans-serif;
   }
 
   main {
