@@ -1,23 +1,39 @@
 <footer>
-  <img class="gruponutec" src="/logos/nutec.png" alt="GRUPONUTEC">
+  <a class="logo-nae" href="https://gponutec.com">
+    <img class="gruponutec" src="/logos/nutec.png" alt="GRUPONUTEC" /></a
+  >
   <span class="separator" />
   <div>
-    <img class="icon" src="/icons/facebook.png" alt="facebook">
-    <img class="icon" src="/icons/youtube.png" alt="youtube">
+    <a class="icon" href="https://facebook.com/naequina">
+      <img class="icon" src="/icons/facebook.png" alt="facebook" />
+    </a>
+    <a href="https://youtube.com/channel/UCxkEv07Fa9GroMMxANGdBxw" class="icon">
+      <img class="icon" src="/icons/youtube.png" alt="youtube" />
+    </a>
   </div>
 </footer>
 
 <style>
+  a.logo-nae {
+    align-self: center;
+    justify-self: right;
+    position: absolute;
+  }
+  a.icon {
+    align-self: center;
+    justify-self: right;
+  }
   img.icon {
+    align-self: center;
     width: 40px;
     height: 40px;
-    align-self: center;
   }
 
   img.gruponutec {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
     align-self: center;
+    text-align: right;
   }
 
   div {
@@ -46,16 +62,16 @@
     width: 100%;
     height: 100%;
     background-color: var(--azul-secundario);
-    clip-path: polygon(100% 0, 0 0 , 0 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
   }
-  
+
   span.separator::after {
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
     background-color: var(--naranja-principal);
-    clip-path: polygon(100% 0, 0 100% , 100% 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
 
   footer {
@@ -63,17 +79,24 @@
 
     display: flex;
     justify-content: right;
+    position: relative;
 
     max-height: 10vh;
   }
 
-  @media (min-width: 768px) {
-    img.gruponutec {
-      height: 20%;
-      width: 20%;
-      align-self: center;
+  @media (max-width: 411px) {
+    a.logo-nae {
+      left: 10%;
     }
 
+    img.gruponutec {
+      width: 70%;
+      height: 70%;
+      align-self: center;
+    }
+  }
+
+  @media (min-width: 768px) {
     span.separator {
       display: block;
       position: relative;
