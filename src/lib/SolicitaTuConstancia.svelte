@@ -47,13 +47,13 @@
     color: white;
   }
 
-  @media (max-width: 411px) {
+  @media screen and (max-width: 411px) {
     section {
       height: 30vh;
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1366px) {
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
     div {
       width: 100%;
     }
@@ -76,12 +76,12 @@
       text-align: center;
     }
   }
-  @media (min-width: 1367px) {
+  @media screen and (min-width: 1367px) {
     p {
       font-size: 3.5em;
 
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 30%;
 
       width: 60vw;
@@ -96,18 +96,6 @@
       border-top: none;
       height: 40vh;
       position: relative;
-    }
-  }
-  @media (min-width: 1920px) {
-    p {
-      font-size: 3.5em;
-
-      position: absolute;
-      top: 20%;
-      left: 30%;
-
-      width: 60vw;
-      text-align: center;
     }
   }
 </style>
