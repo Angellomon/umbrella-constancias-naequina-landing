@@ -3,8 +3,8 @@
 <div>
   <section>
     <p>
-      <span class="black">SOLICITA TU</span>
-      <span class="white">CONSTANCIA</span>
+      <span class="black">SISTEMA DE CONSTANCIAS</span>
+      <span class="white">NAEQUINA</span>
     </p>
   </section>
 </div>
@@ -29,11 +29,12 @@
   }
 
   p {
-    font-size: 2.6em;
+    font-family: "Montserrat Bold";
+    font-size: 1.8em;
     font-weight: bold;
 
     position: relative;
-    padding-right: 5%;
+    padding-right: 5vw;
 
     text-align: right;
   }
@@ -52,7 +53,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1366px) {
     div {
       width: 100%;
     }
@@ -60,17 +61,41 @@
     section {
       border-top: none;
       height: 40vh;
+      position: relative;
     }
 
     p {
+      font-family: "Montserrat Bold";
       font-size: 3.5em;
 
       position: absolute;
       top: 20%;
-      left: 40%;
+      left: 30%;
 
-      width: 30vw;
+      width: 60vw;
       text-align: center;
+    }
+  }
+  @media (min-width: 1367px) {
+    p {
+      font-size: 3.5em;
+
+      position: absolute;
+      top: 30%;
+      left: 30%;
+
+      width: 60vw;
+      text-align: center;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    section {
+      border-top: none;
+      height: 40vh;
+      position: relative;
     }
   }
 </style>

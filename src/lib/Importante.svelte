@@ -3,22 +3,23 @@
 <section>
   <div>
     <h2>IMPORTANTE</h2>
-    <p>Para descargar tu constancia, es necesario que hayas cumplido con el requerimiento mínimo de asistencia del 75% del tiempo.</p>
+    <p>
+      Para descargar tu constancia, es necesario que hayas cumplido con el
+      requerimiento mínimo de asistencia del 75% del tiempo.
+    </p>
     <p>En caso contrario, no podrás descargar la constancia.</p>
   </div>
 </section>
 
 <style>
-
   section {
     background-color: var(--gris-principal);
 
     display: flex;
     justify-content: center;
     align-content: center;
-
   }
-  
+
   div {
     margin: 5vw;
     padding: 0 5vw;
@@ -37,6 +38,7 @@
 
   h2 {
     margin: 0.5em;
+    font-family: "Montserrat Bold";
   }
 
   @media (min-width: 768px) {
@@ -45,5 +47,4 @@
       font-weight: bold;
     }
   }
-
 </style>

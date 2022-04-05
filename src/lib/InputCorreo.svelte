@@ -1,20 +1,18 @@
 <script>
-  import { correo } from "./store"
+  import { correo } from "./store";
 
   const handleEnviar = async () => {
-    if (!$correo) return
+    if (!$correo) return;
 
     console.log(correo);
-  }
+  };
 </script>
 
 <section>
-  <p>
-    Ingresa tu correo electrónico
-  </p>
+  <p>Ingresa tu correo electrónico</p>
 
-  <input bind:value={$correo} type="email" placeholder="CORREO">
-  
+  <input bind:value={$correo} type="email" placeholder="CORREO" />
+
   <button on:click={handleEnviar}>ENVIAR</button>
 </section>
 
@@ -24,9 +22,11 @@
 
     color: white;
 
+    font-family: "Montserrat Bold";
+
     padding: 0.5em 1.4em;
     margin: 2em auto;
- 
+
     font-weight: bold;
     font-size: 1.2em;
 
@@ -52,7 +52,6 @@
     justify-content: center;
     align-content: center;
 
-
     text-align: center;
   }
 
@@ -62,7 +61,7 @@
 
     margin: auto;
     padding: 0.6em 1.5em;
-    
+
     width: 70%;
   }
 
