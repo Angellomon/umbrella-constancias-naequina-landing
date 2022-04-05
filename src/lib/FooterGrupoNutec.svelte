@@ -16,7 +16,6 @@
 <style>
   a.logo-nae {
     align-self: center;
-    justify-self: right;
     position: absolute;
   }
   a.icon {
@@ -27,13 +26,6 @@
     align-self: center;
     width: 40px;
     height: 40px;
-  }
-
-  img.gruponutec {
-    height: 70%;
-    width: 70%;
-    align-self: center;
-    text-align: right;
   }
 
   div {
@@ -84,9 +76,9 @@
     max-height: 10vh;
   }
 
-  @media (max-width: 411px) {
+  @media screen and (max-width: 411px) {
     a.logo-nae {
-      left: 10%;
+      left: 5%;
     }
 
     img.gruponutec {
@@ -96,17 +88,26 @@
     }
   }
 
-  @media (min-width: 768px) {
-    span.separator {
-      display: block;
-      position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+    img.gruponutec {
+      height: 100%;
+      width: 100%;
+      align-self: center;
+    }
 
+    a.logo-nae {
+      left: 63vw !important;
+    }
+
+    span.separator {
       width: 9.5vh;
       height: 99vh;
+    }
+  }
 
-      transform: rotateY(180deg);
-
-      max-height: 10vh;
+  @media screen and (min-width: 1367px) {
+    a.logo-nae {
+      left: 70%;
     }
   }
 </style>
