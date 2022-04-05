@@ -98,4 +98,16 @@
       position: relative;
     }
   }
+  @media (min-width: 1920px) {
+    p {
+      font-size: 3.5em;
+
+      position: absolute;
+      top: 20%;
+      left: 30%;
+
+      width: 60vw;
+      text-align: center;
+    }
+  }
 </style>
