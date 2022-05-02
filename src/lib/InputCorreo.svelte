@@ -1,10 +1,38 @@
 <script>
   import { correo } from "./store";
+  import axios from "axios"
 
   const handleEnviar = async () => {
     if (!$correo) return;
 
     console.log(correo);
+    
+    try {
+      const res = await axios.get(
+        `https://umbrella-constancias.herokuapp.com/eventos/js5636rutw/asistentes/buscar?correo=${correo}`,
+        {
+          responseType: "blob",
+        }
+      );
+
+      if (res.status !== 200) return;
+
+      const _url = window.URL.createObjectURL(new Blob([res.data]));
+
+      const link = document.createElement("a");
+
+      link.href = _url;
+      link.setAttribute(
+        "download",
+        `CONSTANCIA DE PARTICIPACIÓN - 5° Ciclo Internacional de Conferencias`
+      );
+
+      document.body.appendChild(link);
+
+      link.click();
+    } catch (err) {
+      console.log(err);
+    }
   };
 </script>
 
