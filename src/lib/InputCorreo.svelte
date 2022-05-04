@@ -14,7 +14,14 @@
 <section>
   <p>Ingresa tu correo electrónico</p>
 
-  <input bind:value={$correo} type="email" placeholder="CORREO" />
+  <input
+    on:keydown={(value) => {
+      if ((value.keyCode || value.which || value.key) == 13) handleEnviar();
+    }}
+    bind:value={$correo}
+    type="email"
+    placeholder="CORREO"
+  />
 
   <button on:click={handleEnviar} disabled={$status.loadingEmail}>
     ENVIAR
