@@ -41,8 +41,6 @@ export const consultarCorreo = async () => {
     document.body.appendChild(link);
 
     link.click();
-
-    document.removeChild(link);
   } catch (err) {
     console.log(err);
     status.update((v) => ({ ...v, downloadError: true }));
