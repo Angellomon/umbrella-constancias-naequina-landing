@@ -1,9 +1,10 @@
 <script>
   import Loading from "./images/Loading.svelte";
   import { correo, status } from "./store";
-  import { consultarCorreo, validarCorreo } from "./util";
+  import { consultarCorreo } from "./util";
 
-  let estaConsultando;
+  const MENSAJE =
+    "Según nuestros registros, no cubriste el 75% del tiempo conectado al evento.";
 
   const handleEnviar = async () => {
     await consultarCorreo();
@@ -18,9 +19,13 @@
   <button on:click={handleEnviar} disabled={$status.loadingEmail}>
     ENVIAR
     {#if $status.loadingEmail}
-      <span><Loading /></span>
+      <span class="loading"><Loading /></span>
     {/if}
   </button>
+
+  {#if $status.downloadError}
+    <span class="error">{MENSAJE}</span>
+  {/if}
 </section>
 
 <style>
@@ -43,9 +48,14 @@
     cursor: pointer;
   }
 
-  span {
+  span.loading {
     margin-left: 30px;
     margin-right: -15px;
+  }
+
+  span.error {
+    color: white;
+    text-align: center;
   }
 
   p {
