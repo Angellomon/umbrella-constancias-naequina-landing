@@ -1,39 +1,12 @@
 <script>
-  import { correo } from "./store";
-  import axios from "axios";
+  import Loading from "./images/Loading.svelte";
+  import { correo, status } from "./store";
+  import { consultarCorreo, validarCorreo } from "./util";
 
-  // const BASE_URL = "https://localhost:5000";
-  const BASE_URL = "https://umbrella-constancias.herokuapp.com";
+  let estaConsultando;
 
   const handleEnviar = async () => {
-    if (!$correo) return;
-
-    try {
-      const res = await axios.get(
-        `${BASE_URL}/eventos/js5636rutw/asistentes/buscar?correo=${$correo}`,
-        {
-          responseType: "blob",
-        }
-      );
-
-      if (res.status !== 200) return;
-
-      const _url = window.URL.createObjectURL(new Blob([res.data]));
-
-      const link = document.createElement("a");
-
-      link.href = _url;
-      link.setAttribute(
-        "download",
-        `CONSTANCIA DE PARTICIPACIÓN - 5° Ciclo Internacional de Conferencias.pdf`
-      );
-
-      document.body.appendChild(link);
-
-      link.click();
-    } catch (err) {
-      console.log(err);
-    }
+    await consultarCorreo();
   };
 </script>
 
@@ -42,7 +15,12 @@
 
   <input bind:value={$correo} type="email" placeholder="CORREO" />
 
-  <button on:click={handleEnviar}>ENVIAR</button>
+  <button on:click={handleEnviar} disabled={$status.loadingEmail}>
+    ENVIAR
+    {#if $status.loadingEmail}
+      <span><Loading /></span>
+    {/if}
+  </button>
 </section>
 
 <style>
@@ -61,6 +39,13 @@
 
     border-radius: 30px;
     border: none;
+
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 30px;
+    margin-right: -15px;
   }
 
   p {
@@ -80,6 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
 
     text-align: center;
   }
