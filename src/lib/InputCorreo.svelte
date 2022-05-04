@@ -1,15 +1,18 @@
 <script>
   import { correo } from "./store";
-  import axios from "axios"
+  import axios from "axios";
+
+  // const BASE_URL = "https://localhost:5000";
+  const BASE_URL = "https://umbrella-constancias.herokuapp.com";
 
   const handleEnviar = async () => {
     if (!$correo) return;
 
-    console.log(correo);
-    
+    console.log($correo);
+
     try {
       const res = await axios.get(
-        `https://umbrella-constancias.herokuapp.com/eventos/js5636rutw/asistentes/buscar?correo=${correo}`,
+        `${BASE_URL}/eventos/js5636rutw/asistentes/buscar?correo=${$correo}`,
         {
           responseType: "blob",
         }
