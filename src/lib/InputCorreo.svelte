@@ -8,8 +8,6 @@
   const handleEnviar = async () => {
     if (!$correo) return;
 
-    console.log($correo);
-
     try {
       const res = await axios.get(
         `${BASE_URL}/eventos/js5636rutw/asistentes/buscar?correo=${$correo}`,
@@ -27,7 +25,7 @@
       link.href = _url;
       link.setAttribute(
         "download",
-        `CONSTANCIA DE PARTICIPACIÓN - 5° Ciclo Internacional de Conferencias`
+        `CONSTANCIA DE PARTICIPACIÓN - 5° Ciclo Internacional de Conferencias.pdf`
       );
 
       document.body.appendChild(link);
