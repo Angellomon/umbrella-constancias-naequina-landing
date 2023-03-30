@@ -39,8 +39,7 @@
       rgba(0, 0, 0, 1) 100%
     );
 
-    height: 10vh;
-    padding: 10px;
+    height: 80px;
 
     display: flex;
     flex-direction: row;
@@ -48,6 +47,8 @@
 
     justify-content: space-around;
     align-items: center;
+
+    border-bottom: 1px solid white;
   }
 
   header img {
@@ -55,7 +56,8 @@
   }
 
   header img.logo {
-    max-width: 300px;
+    width: 300px;
+    transition: width 0.5s;
   }
 
   header img.flag {
@@ -72,6 +74,7 @@
 
   header a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background 0.5s;
   }
 
   div.contenido {
@@ -81,5 +84,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* media queries */
+  @media (max-width: 605px) {
+    header {
+      height: 20vh;
+    }
   }
 </style>
