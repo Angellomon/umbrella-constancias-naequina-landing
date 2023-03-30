@@ -1,0 +1,98 @@
+<!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<script lang="ts">
+  export let width: number = 300;
+</script>
+
+<svg
+  {width}
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewBox="0 0 520 120"
+  style="enable-background:new 0 0 520 120;"
+  xml:space="preserve"
+>
+  <g
+    id="_x36_to_Ciclo_de_conferencias_00000011732229360749465670000004169212069252567190_"
+  >
+    <g>
+      <g>
+        <g>
+          <text transform="matrix(1 0 0 1 25.5223 102.4316)" class="st0 st1"
+            >3ª EDICIÓN VIRTUAL</text
+          >
+        </g>
+      </g>
+    </g>
+    <g>
+      <g>
+        <text
+          transform="matrix(1 0 0 1 24.5101 37.5669)"
+          class="st2 st3 st4 st5">6.</text
+        >
+        <text
+          transform="matrix(0.583 0 0 0.583 38.7737 30.4243)"
+          class="st2 st3 st4">to</text
+        >
+        <text
+          transform="matrix(1 0 0 1 49.7405 37.5669)"
+          class="st2 st3 st4 st5"
+        >
+          CICLO INTERNACIONAL DE</text
+        >
+        <text transform="matrix(1 0 0 1 22.5291 69.2441)" class="st2 st3 st6"
+          >CONFERENCIAS</text
+        >
+        <text transform="matrix(1 0 0 1 318.0198 70.8359)"
+          ><tspan x="0" y="0" class="st7 st8 st9">/</tspan><tspan
+            x="20.9"
+            y="0"
+            class="st7 st3 st9"
+          /></text
+        >
+        <text transform="matrix(1 0 0 1 344.1028 69.2822)" class="st2 st3 st10"
+          >2023
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
+
+<style type="text/css">
+  .st0 {
+    font-family: "Montserrat Bold";
+  }
+  .st1 {
+    font-size: 22.0879px;
+  }
+  .st2 {
+    fill: #202020;
+  }
+  .st3 {
+    font-family: "Montserrat Regular";
+  }
+  .st4 {
+    font-size: 20px;
+  }
+  .st5 {
+    letter-spacing: -1;
+  }
+  .st6 {
+    font-size: 35.3916px;
+  }
+  .st7 {
+    fill: #1d1d1b;
+  }
+  .st8 {
+    font-family: "Montserrat Thin";
+  }
+  .st9 {
+    font-size: 69.5809px;
+  }
+  .st10 {
+    font-size: 64.3483px;
+  }
+</style>
