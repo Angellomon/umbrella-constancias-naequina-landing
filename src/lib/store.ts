@@ -51,6 +51,10 @@ const initialData = {
     en: "/img/flag-mex.png",
     es: "/img/flag-usa.png",
   },
+  EVENT_LOGO_IMG: {
+    en: "/img/logo-event_eng.svg",
+    es: "/img/logo-event_esp.svg",
+  },
 };
 
 export const content = readable(initialData);
