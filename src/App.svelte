@@ -1,30 +1,14 @@
-<script>
-  import FooterEmpresas from "./lib/FooterEmpresas.svelte";
-  import FooterGrupoNutec from "./lib/FooterGrupoNutec.svelte";
-  import Header from "./lib/Header.svelte";
-  import Importante from "./lib/Importante.svelte";
-  import InputCorreo from "./lib/InputCorreo.svelte";
-  import SolicitaTuConstancia from "./lib/SolicitaTuConstancia.svelte";
+<script lang="ts">
+  import MainLayout from "./lib/components/MainLayout.svelte";
+
 </script>
 
 <main>
-  <Header />
-  <SolicitaTuConstancia />
-
-  <div class="desktop">
-    <InputCorreo />
-    <Importante />
-  </div>
-  <div class="mobile">
-    <Importante />
-    <InputCorreo />
-  </div>
-
-  <FooterGrupoNutec />
-  <FooterEmpresas />
+  <MainLayout />
 </main>
 
 <style>
+<<<<<<< HEAD
   @font-face {
     font-family: "Montserrat Regular";
     src: url("/fonts/montserrat-regular.ttf");
@@ -84,4 +68,6 @@
       padding: 0;
     }
   }
+=======
+>>>>>>> 257c99d (feat(app): udpate js -> ts)
 </style>
