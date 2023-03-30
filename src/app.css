@@ -30,6 +30,7 @@
 
   --color-principal: #e53645;
   --color-principal-rgba: rgba(229, 54, 69, 1);
+  --color-principal-rgba-opaco: rgba(229, 54, 69, 0.1);
   --bg-color-light: #fff;
   --bg-color-dark: #000;
   --font-color: #fff;
