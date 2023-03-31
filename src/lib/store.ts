@@ -23,9 +23,13 @@ const initialData = {
     en: "assistance certificate",
     es: "de asistencia al evento",
   },
-  EMAIL_TEXT: {
-    en: "Provide your email",
+  EMAIL_LABEL_TEXT: {
+    en: "Enter your email",
     es: "Ingresa tu correo electrónico",
+  },
+  EMAIL_BUTTON_TEXT: {
+    en: "Submit",
+    es: "Enviar",
   },
   MESSAGE_TEXT_1: {
     en: "Heads up",
@@ -54,6 +58,10 @@ const initialData = {
   EVENT_LOGO_IMG: {
     en: "/img/logo-event_eng.svg",
     es: "/img/logo-event_esp.svg",
+  },
+  EMAIL_PLACEHOLDER: {
+    en: "Email",
+    es: "Correo electónico",
   },
 };
 
