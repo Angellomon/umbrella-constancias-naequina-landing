@@ -18,7 +18,7 @@
   section {
     background-color: #f4f4f4;
     background-repeat: no-repeat;
-    background-size: clamp(400px, 40%, 500px);
+    background-size: 600px;
     background-image: url("/img/bg-dots.png");
     background-position: right center;
 
@@ -29,6 +29,7 @@
     align-items: flex-end;
 
     height: 25vh;
+    min-height: 200px;
 
     border-bottom: 30px solid var(--bg-color-dark);
   }
@@ -57,7 +58,7 @@
   }
 
   div.img-side img {
-    max-width: 220px;
+    max-width: 250px;
 
     /* margin-left: 10%; */
   }
@@ -81,11 +82,13 @@
   @media (max-width: 925px) {
     section {
       height: 65vh;
-      background-size: 1000px;
+
+      /* background-size: 1000px; */
+      background-size: cover;
     }
 
     div.img-side img {
-      max-width: 300px;
+      max-width: 500px;
     }
 
     div.img-side {
@@ -96,7 +99,12 @@
   @media (max-width: 465px) {
     section {
       height: 70vh;
-      background-size: 1050px;
+      background-size: cover;
+      /* background-size: 1050px; */
+    }
+
+    div.img-side img {
+      max-width: 500px;
     }
   }
 </style>
