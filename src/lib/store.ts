@@ -32,8 +32,8 @@ const initialData = {
     es: "Enviar",
   },
   MESSAGE_TEXT_1: {
-    en: "Heads up",
-    es: "Importante",
+    en: "Heads up!",
+    es: "¡Importante!",
   },
   MESSAGE_TEXT_2_A: {
     en: "In order to be elegible for downloading your Assistance Certificate you must have at least",
