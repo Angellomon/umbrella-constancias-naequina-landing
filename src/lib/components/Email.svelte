@@ -33,6 +33,7 @@
     color: var(--font-color);
 
     width: 50%;
+    min-height: 250px;
   }
 
   div.email-label-container {
