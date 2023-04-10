@@ -66,3 +66,11 @@ const initialData = {
 };
 
 export const content = readable(initialData);
+
+export const emailIsLoading = writable(false);
+
+export const errors = writable({
+  invalidEmail: false,
+  emailNotFound: false,
+  serverError: false,
+});
