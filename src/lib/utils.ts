@@ -13,12 +13,31 @@ export function toggleLang() {
   }
 }
 
-export function submitEmail(email: string) {
+export async function submitEmail(
+  email: string,
+  onError: (v: string) => void = () => {}
+) {
   const isValidEmail = validateEmail(email);
 
-  if (!isValidEmail) return;
+  try {
+    if (!isValidEmail) throw "incorrect-email";
 
-  // TODO: impl pdf download
+    const query = `correo=${email}`;
+    const result = await fetch(
+      `${emailConfig.serverUrl}/pdf/${emailConfig.eventId}?${query}`
+    );
+
+    if (result.status == 404) throw "not-found";
+    if (result.status == 400) throw "incorrect-email";
+    if (result.status == 500) throw "server-error";
+
+    const blob = await result.blob();
+    const file = window.URL.createObjectURL(blob);
+
+    window.location.assign(file);
+  } catch (errCode) {
+    onError(errCode);
+  }
 }
 
 export function validateEmail(email: any) {
@@ -26,3 +45,8 @@ export function validateEmail(email: any) {
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
+
+export const emailConfig = {
+  serverUrl: "https://constancias.umbrellaservices.angellos.net",
+  eventId: "wqnv7jnduv",
+};
