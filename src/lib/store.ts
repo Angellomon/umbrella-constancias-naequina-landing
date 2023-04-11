@@ -40,8 +40,8 @@ const initialData = {
     es: "Recuerda que para tener derecho a tu constancia debes haber cumplido, por lo menos, con un mínimo",
   },
   MESSAGE_TEXT_2_B: {
-    en: "75% of total assistance time",
-    es: "de 75% del tiempo del evento",
+    en: "55% of total assistance time",
+    es: "de 55% del tiempo del evento",
   },
   MESSAGE_TEXT_2_C: {
     en: "connected (using the same email you signed up).",
