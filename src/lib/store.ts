@@ -32,19 +32,19 @@ const initialData = {
     es: "Enviar",
   },
   MESSAGE_TEXT_1: {
-    en: "Heads up!",
+    en: "Important!",
     es: "¡Importante!",
   },
   MESSAGE_TEXT_2_A: {
-    en: "In order to be elegible for downloading your Assistance Certificate you must have at least",
+    en: "In order to obtain your Assistance Certificate you must have met, at least,",
     es: "Recuerda que para tener derecho a tu constancia debes haber cumplido, por lo menos, con un mínimo",
   },
   MESSAGE_TEXT_2_B: {
-    en: "55% of total assistance time",
+    en: "a minimum of 55% assistance to the event",
     es: "de 55% del tiempo del evento",
   },
   MESSAGE_TEXT_2_C: {
-    en: "connected (using the same email you signed up).",
+    en: "(always using the email with which you registered).",
     es: "conectado al mismo (utilizando el correo con el cual te registraste).",
   },
   LOGO_SRC: {
