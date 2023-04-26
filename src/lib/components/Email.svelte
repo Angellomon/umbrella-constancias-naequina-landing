@@ -37,6 +37,9 @@
     <div class="email-label">
       {$content.EMAIL_LABEL_TEXT[$lang]}
     </div>
+    <div class="email-notice">
+      <i>{$content.EMAIL_LABEL_TEXT_NOTICE[$lang]}</i>
+    </div>
   </div>
   <div class="email-input-container">
     <input
@@ -114,6 +117,16 @@
     font-style: italic; */
 
     padding: 5px 15px;
+  }
+
+  div.email-notice {
+    position: absolute;
+
+    bottom: -25px;
+    left: 0;
+
+    color: white;
+    font-family: "Montserrat Regular";
   }
 
   div.email-label::after {
