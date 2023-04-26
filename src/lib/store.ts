@@ -27,6 +27,10 @@ const initialData = {
     en: "Enter your email",
     es: "Ingresa tu correo electrónico",
   },
+  EMAIL_LABEL_TEXT_NOTICE: {
+    en: "Please add the same email you used to register for NAEQUINA 2023",
+    es: "Favor de agregar el mismo correo con el que te registraste a NAEQUINA 2023 ",
+  },
   EMAIL_BUTTON_TEXT: {
     en: "Submit",
     es: "Enviar",
