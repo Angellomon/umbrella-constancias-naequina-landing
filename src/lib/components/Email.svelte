@@ -122,11 +122,13 @@
   div.email-notice {
     position: absolute;
 
-    bottom: -25px;
-    left: 0;
+    bottom: -30px;
+    left: 15px;
 
     color: white;
     font-family: "Montserrat Regular";
+    font-size: 12px;
+    line-height: 1;
   }
 
   div.email-label::after {
@@ -138,7 +140,6 @@
     background: var(--color-principal);
     transform: skewX(-30deg);
     -webkit-transform: skewX(-30deg);
-    /* z-index: -10; */
 
     top: 0;
     right: -20px;
