@@ -61,15 +61,15 @@
     </button>
 
     {#if $errors.emailNotFound}
-      <p transition:fly>El correo no fue encontrado...</p>
+      <p transition:fly>{$content.ERROR_EMAIL_NOT_FOUND[$lang]}</p>
     {/if}
 
     {#if $errors.invalidEmail}
-      <p transition:fly>El correo no es válido...</p>
+      <p transition:fly>{$content.ERROR_EMAIL_INVALID[$lang]}</p>
     {/if}
 
     {#if $errors.serverError}
-      <p transition:fly>Ocurrió un error...</p>
+      <p transition:fly>{$content.ERROR_EMAIL_OTHER[$lang]}</p>
     {/if}
   </div>
 </section>
