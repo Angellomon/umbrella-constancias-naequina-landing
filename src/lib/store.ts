@@ -67,6 +67,18 @@ const initialData = {
     en: "Email",
     es: "Correo electónico",
   },
+  ERROR_EMAIL_NOT_FOUND: {
+    en: "According to our records, you did not meet the 55% attendance time requirement for the event.",
+    es: "De acuerdo a nuestros registros, no cumpliste con el 55% de tiempo de asistencia al evento",
+  },
+  ERROR_EMAIL_INVALID: {
+    en: "Invalid email",
+    es: "El correo no es válido",
+  },
+  ERROR_EMAIL_OTHER: {
+    en: "En error happened...",
+    es: "Ocurrió un error...",
+  },
 };
 
 export const content = readable(initialData);
