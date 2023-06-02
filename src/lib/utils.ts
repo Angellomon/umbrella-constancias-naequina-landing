@@ -22,7 +22,7 @@ export async function submitEmail(
   try {
     if (!isValidEmail) throw "incorrect-email";
 
-    const query = `correo=${email}`;
+    const query = `correo=${email.toLowerCase()}`;
     const result = await fetch(
       `${emailConfig.serverUrl}/pdf/${emailConfig.eventId}?${query}`
     );
